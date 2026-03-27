@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.bg-img{
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/23914.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    height: 670px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav p{
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    height: 50px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 40px;
+}
+.nav-bar img{
+    height: 80px;
+    width: 150px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    font-size: 14px;
+}
+.nav-bar ul :hover{
+    color: rgba(194, 194, 194, 0.705);
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-accessories{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-right: 80px;
+}
+.nav-accessories a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.search{
+    background-color: transparent;
+    border-style: none;
+}
+.bi-search{
+    font-size: 25px;
+}
+.kids{
+    background-color: transparent;
+    border-style: none;
+}
+.bell{
+    background-color: transparent;
+    border-style: none;
+}
+.bi-bell{
+    font-size: 25px;
+}
+.profile{
+    background-color: transparent;
+    border-style: none;
+}
+.bi-person-circle{
+    font-size: 25px;
+}
+.about-text p{
+    color: black;
+    width: 396px;
+    font-size: 15px;
+    padding-left: 55px;
+    padding-bottom: 20px;
+}
+.play{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    font-size: 17px;
+    padding: 0px 23px;
+}
+.play:hover{
+    background-color: rgba(194, 194, 194, 0.705);
+    cursor: pointer;
+}
+.bi-play-fill{
+    font-size: 35px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    font-size: 17px;
+    padding: 6px 23px;
+}
+.info:hover{
+    background-color: rgba(109, 109, 110, 0.603);
+    cursor: pointer;
+}
+.bi-info-circle{
+    font-size: 25px;
+}
+.about-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 55px;
+}
+.about-row{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.farend{
+    color: white;
+    background-color: rgba(51, 51, 51, .6);
+    border-left: 3px solid white;
+    padding: 6px 39px 6px 8px;
+    font-size: 18px;
+}
+.about{
+    margin-top: 350px;
+}
+.end{
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+    color: black;
+}
+.recommend-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.punch{
+    position: relative;
+}
+.punch img{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.punch-btn{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 45px;
+}
+.punch button{
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 0px 10px;
+}
+.invincible{
+    position: relative;
+}
+.invincible img{
+    width: 250px;
+    height: 150px;
+}
+.invincible-btn{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 45px;
+}
+.invincible button{
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 0px 10px;
+}
+.season{
+    background-color: red;
+    color: white;
+    border-top-left-radius: 2px;
+}
+.naruto img{
+    width: 250px;
+    height: 150px;
+}
+.bleach img{
+    width: 250px;
+    height: 150px;
+}
+.hunter img{
+    width: 250px;
+    height: 150px;
+}
+.dragon-ball img{
+    width: 250px;
+    height: 150px;
+}
+.recommend-two-section h3{
+    color: white;
+    padding-left: 55px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.recommend-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.solo img{
+    width: 250px;
+    height: 150px;
+    margin-left: 55px;
+}
+.demon{
+    position: relative;
+}
+.demon img{
+    width: 250px;
+    height: 150px;
+}
+.episode{
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 0px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 80px;
+}
+.top-ten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 2px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+}
+.clover img{
+    width: 250px;
+    height: 150px;
+}
+.hero img{
+    width: 250px;
+    height: 150px;
+}
+.chainsaw img{
+    width: 250px;
+    height: 150px;
+}
+.spy img{
+    width: 250px;
+    height: 150px;
+}
+.recommend-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.recommend-three-section h3{
+    color: white;
+    padding-left: 55px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.danger img{
+    width: 250px;
+    height: 150px;
+    margin-left: 65px;
+}
+.sign img{
+    width: 250px;
+    height: 150px;
+}
+.zero{
+    position: relative;
+}
+.zero img{
+    width: 250px;
+    height: 150px;
+}
+.recent{
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 0px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 80px;
+}
+.galaxy img{
+    width: 250px;
+    height: 150px;
+}
+.silent img{
+    width: 250px;
+    height: 150px;
+}
+.flower img{
+    width: 250px;
+    height: 150px;
+}
+.recommend-four-section h3{
+    color: white;
+    padding-left: 55px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.recommend-four{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gachi img{
+    width: 250px;
+    height: 150px;
+    margin-left: 65px;
+}
+.jujutsu{
+    position: relative;
+}
+.jujutsu img{
+    width: 250px;
+    height: 150px;
+}
+.jujutsu-btn{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 45px;
+}
+.jujutsu button{
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 0px 10px;
+}
+.coming{
+    border-top-right-radius: 2px;
+}
+.wind img{
+    width: 250px;
+    height: 150px;
+}
+.jobless img{
+    width: 250px;
+    height: 150px;
+}
+.boruto img{
+    width: 250px;
+    height: 150px;
+}
+.kaiju img{
+    width: 250px;
+    height: 150px;
+}
+.mash img{
+    width: 250px;
+    height: 150px;
+}
+.final-recommend-section h3{
+    color: white;
+    padding-left: 55px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.recommend-five{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.assasin img{
+    width: 250px;
+    height: 150px;
+    margin-left: 65px;
+}
+.death img{
+    width: 250px;
+    height: 150px;
+}
+.dan img{
+    width: 250px;
+    height: 150px;
+}
+.shield img{
+    width: 250px;
+    height: 150px;
+}
+.tokyo img{
+    width: 250px;
+    height: 150px;
+}
+footer{
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    column-gap: 200px;
+    margin-left: 55px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: grey;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.column-one{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.copyright{
+    color: grey;
+    margin-left: 55px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
