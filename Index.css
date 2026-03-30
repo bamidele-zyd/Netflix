@@ -8,6 +8,10 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.89);
+    position: relative;
+}
+.burger{
+    display: none;
 }
 .bg-img{
     background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/23914.jpg");
@@ -18,10 +22,15 @@ body{
     height: 670px;
     width: 100%;
 }
+.overlay{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.082), rgba(7, 7, 7, 0), transparent);
+    height: 100%;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 nav p{
     color: white;
@@ -41,6 +50,7 @@ nav p{
 }
 .nav-bar ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     column-gap: 20px;
     font-size: 14px;
@@ -52,9 +62,13 @@ nav p{
     text-decoration: none;
     color: white;
 }
+#hidden-accessories{
+    display: none;
+}
 .nav-accessories{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 30px;
     margin-right: 80px;
 }
@@ -160,12 +174,19 @@ nav p{
     position: absolute;
     bottom: 10px;
     left: 55px;
-    color: black;
+    color: white;
 }
 .recommend-one{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.movie-container{
+    overflow-x: scroll;
+    cursor: grab;
+}
+.movie-container::-webkit-scrollbar{
+    height: 1px;
 }
 .punch{
     position: relative;
@@ -294,6 +315,7 @@ nav p{
 }
 .recommend-three{
     display: flex;
+    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -350,6 +372,7 @@ nav p{
 }
 .recommend-four{
     display: flex;
+    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -408,6 +431,7 @@ nav p{
 }
 .recommend-five{
     display: flex;
+    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -442,11 +466,20 @@ footer{
     column-gap: 30px;
     color: white;
     font-size: 30px;
-    margin-bottom: 10px;
     margin-left: 80px;
+}
+.bi-facebook:hover{
+    cursor: pointer;
+}
+.bi-instagram:hover{
+    cursor: pointer;
+}
+.bi-youtube:hover{
+    cursor: pointer;
 }
 .footer-links{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 200px;
     margin-left: 55px;
@@ -461,11 +494,78 @@ footer{
 .column-one{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 15px;
+    margin-top: 20px;
 }
 .copyright{
     color: grey;
     margin-left: 55px;
     margin-top: 35px;
     margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 1060px){
+    .nav-bar ul{
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 48%;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 650px){
+    .nav-bar{
+        display: flex;
+        align-items: start;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .burger{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .hidden{
+        display: none;
+    }
+    #hidden-accessories{
+        display: inline-block;
+        margin-right: 30px;
+        width: 120px;
+    }
+    .about{
+        margin-top: 220px;
+    }
+    .about-text p{
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        width: 340px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+    .about-row{
+        margin-top: 10px;
+    }
+    .rated button{
+        position: absolute;
+        right: 0;
+        top: 240px;
+    }
 }
