@@ -53,11 +53,11 @@ function showMovies(containerId, movielist){
 
 async function startApp(){
     console.log("Website is Starting")
-   showMovies("old-gen-container", await getMovies("old"))
-   showMovies("new-gen-container", await getMovies("new"))
-   showMovies("romance-container", await getMovies("rom"))
-   showMovies("action-container", await getMovies("action"))
-   showMovies("psychological-container", await getMovies("mystery"))
+//    showMovies("old-gen-container", await getMovies("old"))
+//    showMovies("new-gen-container", await getMovies("new"))
+//    showMovies("romance-container", await getMovies("rom"))
+//    showMovies("action-container", await getMovies("action"))
+//    showMovies("psychological-container", await getMovies("mystery"))
 }
 
 document.addEventListener("DOMContentLoaded", startApp)
