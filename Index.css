@@ -379,6 +379,7 @@ nav p{
 .gachi img{
     width: 250px;
     height: 150px;
+    object-fit: cover;
     margin-left: 65px;
 }
 .jujutsu{
