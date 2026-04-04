@@ -43,7 +43,7 @@ function showMovies(containerId, movielist){
         if(image === "N/A"){
             image = ""
         }
-        console.log(image)
+
         card.innerHTML = `<img src=${image}>`
 
         container.appendChild(card)
