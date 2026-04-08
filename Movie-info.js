@@ -18,6 +18,11 @@ const displayMovieDetails = (movie) => {
     document.getElementById('title').textContent = movie.Title
     document.getElementById('genre').textContent = movie.Genre
     document.getElementById('language').textContent = movie.Language
+    document.getElementById('plot').textContent = movie.Plot
+    document.getElementById('director').textContent = movie.Director
+    document.getElementById('cast').textContent = movie.Actors
+    document.getElementById('release').textContent = movie.Released
+    document.getElementById('duration').textContent = movie.Runtime
 
 }
 
