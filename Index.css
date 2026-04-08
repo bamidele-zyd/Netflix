@@ -372,7 +372,6 @@ nav p{
 }
 .recommend-four{
     display: flex;
-    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -380,7 +379,7 @@ nav p{
     width: 250px;
     height: 150px;
     object-fit: cover;
-    margin-left: 65px;
+    margin-left: 55px;
 }
 .jujutsu{
     position: relative;
